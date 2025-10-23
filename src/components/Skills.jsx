@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  "HTML", "CSS", "JavaScript", "React", "Tailwind CSS",
-  "Node.js", "Express", "MongoDB", "Github",
+  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Tailwind CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
 ];
+
 
 export default function Skills() {
   return (
@@ -19,7 +27,10 @@ export default function Skills() {
             transition={{ delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            {skill}
+           {skill && (<>
+              <img src={skill.logo} alt={skill.name} className="w-12 h-12 mx-auto mb-2" />
+              <p>{skill.name}</p>
+            </>)}
           </motion.div>
         ))}
       </div>

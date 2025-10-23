@@ -8,9 +8,9 @@ export default function Hero() {
     >
       {/* Floating slide-in image */}
       <motion.img
-        src="/ai2.jpg"
+        src="/port 2.png"
         alt="Profile"
-        className="w-64 h-64 object-cover rounded-2xl mb-8"
+        className="w-64 h-64 object-cover object-top rounded-2xl mb-8"
         initial={{ opacity: 0, y: 80, scale: 0.8 }}
         animate={{
           opacity: 1,

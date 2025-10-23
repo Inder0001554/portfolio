@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 import { link } from "framer-motion/client";
 
 const projects = [
+<<<<<<< HEAD
   { name: "Portfolio Website", desc: "A personal portfolio with smooth animations and dark mode.", tech: "React, Tailwind, Framer Motion", link:"/" },
+=======
+  { name: "Portfolio Website", desc: "A personal portfolio with smooth animations and dark mode.", tech: "React, Tailwind, Framer Motion", link: "/" },
+>>>>>>> 1bb661c4e6c694d3755f99df3bfa04f50920c2b2
   { name: "Airbnb Clone", desc: "With Node.js, Express, and MongoDB", tech: "Node.js", link: "https://air-bnb-clone-keox.onrender.com/listings"},
   { name: "Weather Dashboard", desc: "Real-time weather data using public APIs.", tech: "React, OpenWeather API", link: "https://weather-app-swart-one-80.vercel.app/"},
   { name: "Recipe Site", desc: "We can learn recipe for different foods, vegetable and fruits.", tech: "React.js, tailwind CSS", link: "https://recipe-alpha-swart.vercel.app/" },
